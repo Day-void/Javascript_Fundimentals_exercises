@@ -481,3 +481,4 @@ for (let i = 0; i < nums.length; i++) {
   }
 }
 console.log("Second largest:", second); 
+// Testing my Git connection
