@@ -57,15 +57,25 @@
 
 // console.log("Largest number:", max);
 
-// 7. Count how many numbers are even
+// // 7. Count how many numbers are even
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-let evenCount = 0;
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let evenCount = 0;
 
-numbers.forEach(num => {
-    if (num % 2 === 0) {
-        evenCount++;
+// numbers.forEach(num => {
+//     if (num % 2 === 0) {
+//         evenCount++;
+//     }
+// });
+
+// console.log("Even numbers count:", evenCount);
+
+// 8. Print only names that start with the letter "A"
+
+const names = ["Alice", "Bob", "Andrew", "Charlie", "Amy"];
+
+names.forEach(name => {
+    if (name.startsWith("A")) {
+        console.log(name);
     }
 });
-
-console.log("Even numbers count:", evenCount);
