@@ -93,13 +93,25 @@
 
 // console.log("Vowel count:", vowelCount);
 
-// 10. Create a new array where each number is doubled
+// // 10. Create a new array where each number is doubled
 
-const numbers = [1, 2, 3, 4, 5];
-const doubledNumbers = [];
+// const numbers = [1, 2, 3, 4, 5];
+// const doubledNumbers = [];
+
+// numbers.forEach(num => {
+//     doubledNumbers.push(num * 2);
+// });
+
+// console.log(doubledNumbers);
+
+// 11. Calculate the average of all numbers in an array
+
+const numbers = [10, 20, 30, 40]; 
+let total = 0;
 
 numbers.forEach(num => {
-    doubledNumbers.push(num * 2);
+    total += num;
 });
 
-console.log(doubledNumbers);
+const average = total / numbers.length;
+console.log("Average:", average);
