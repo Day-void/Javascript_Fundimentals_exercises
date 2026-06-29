@@ -137,7 +137,7 @@ switch (score >= 50) {
     console.log("Failed");
 }
 
-// 21. Leap year check.
+// 21. Leap year check..
 
 const year =  Number(prompt("enter year:"));
 const isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
@@ -482,3 +482,4 @@ for (let i = 0; i < nums.length; i++) {
 }
 console.log("Second largest:", second); 
 // Testing my Git connection
+//
