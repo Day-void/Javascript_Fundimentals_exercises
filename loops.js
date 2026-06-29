@@ -143,20 +143,35 @@
 
 // console.log("Students passed:", passingCount);
 
-// 14. Print all duplicate values in an array
+// // 14. Print all duplicate values in an array
 
-const numbers = [1, 2, 3, 2, 4, 5, 1];
-const seen = [];
-const duplicates = [];
+// const numbers = [1, 2, 3, 2, 4, 5, 1];
+// const seen = [];
+// const duplicates = [];
 
-numbers.forEach(num => {
-    if (seen.includes(num)) {
-        if (!duplicates.includes(num)) {
-            duplicates.push(num);
-        }
+// numbers.forEach(num => {
+//     if (seen.includes(num)) {
+//         if (!duplicates.includes(num)) {
+//             duplicates.push(num);
+//         }
+//     } else {
+//         seen.push(num);
+//     }
+// });
+
+// console.log("Duplicate values:", duplicates);
+
+// 15. Count how many times each word appears
+
+const words = ["apple", "banana", "apple", "orange", "banana", "apple"];
+const wordCounts = {};
+
+words.forEach(word => {
+    if (wordCounts[word]) {
+        wordCounts[word]++;
     } else {
-        seen.push(num);
+        wordCounts[word] = 1;
     }
 });
 
-console.log("Duplicate values:", duplicates);
+console.log(wordCounts);
