@@ -130,15 +130,33 @@
 
 // console.log("Longest word:", longestWord);
 
-// 13. Count how many students passed (mark ≥ 50).
+// // 13. Count how many students passed (mark ≥ 50).
 
-const marks = [34, 56, 78, 45, 90, 50];
-let passingCount = 0;
+// const marks = [34, 56, 78, 45, 90, 50];
+// let passingCount = 0;
 
-marks.forEach(mark => {
-    if (mark >= 50) {
-        passingCount++;
+// marks.forEach(mark => {
+//     if (mark >= 50) {
+//         passingCount++;
+//     }
+// });
+
+// console.log("Students passed:", passingCount);
+
+// 14. Print all duplicate values in an array
+
+const numbers = [1, 2, 3, 2, 4, 5, 1];
+const seen = [];
+const duplicates = [];
+
+numbers.forEach(num => {
+    if (seen.includes(num)) {
+        if (!duplicates.includes(num)) {
+            duplicates.push(num);
+        }
+    } else {
+        seen.push(num);
     }
 });
 
-console.log("Students passed:", passingCount);
+console.log("Duplicate values:", duplicates);
