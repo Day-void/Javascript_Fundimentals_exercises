@@ -118,14 +118,27 @@
 
 
 
-// 12. Find the longest word in an array
-const words = ["cat", "elephant", "dog", "giraffe"];
-let longestWord = "";
+// // 12. Find the longest word in an array
+// const words = ["cat", "elephant", "dog", "giraffe"];
+// let longestWord = "";
 
-words.forEach(word => {
-    if (word.length > longestWord.length) {
-        longestWord = word;
+// words.forEach(word => {
+//     if (word.length > longestWord.length) {
+//         longestWord = word;
+//     }
+// });
+
+// console.log("Longest word:", longestWord);
+
+// 13. Count how many students passed (mark ≥ 50).
+
+const marks = [34, 56, 78, 45, 90, 50];
+let passingCount = 0;
+
+marks.forEach(mark => {
+    if (mark >= 50) {
+        passingCount++;
     }
 });
 
-console.log("Longest word:", longestWord);
+console.log("Students passed:", passingCount);
