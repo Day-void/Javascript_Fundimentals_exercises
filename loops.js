@@ -22,13 +22,37 @@
 //     console.log(fruit.toUpperCase());
 // });
 
-// 4. Find the sum of all numbers
+// // 4. Find the sum of all numbers
 
-const numbers = [2, 4, 6, 8, 10];
-let sum = 0;
+// const numbers = [2, 4, 6, 8, 10];
+// let sum = 0;
+
+// numbers.forEach(num => {
+//     sum += num;
+// });
+
+// console.log("Sum:", sum);
+
+// // 5. Count how many items are in the array
+
+// const items = ["item1", "item2", "item3", "item4"]; // Example array
+// let count = 0;
+
+// items.forEach(() => {
+//     count++;
+// });
+
+// console.log("Total items:", count);
+
+// 6. Find the largest number in an array
+
+const numbers = [12, 45, 7, 89, 23];
+let max = numbers[0];
 
 numbers.forEach(num => {
-    sum += num;
+    if (num > max) {
+        max = num;
+    }
 });
 
-console.log("Sum:", sum);
+console.log("Largest number:", max);
