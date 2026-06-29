@@ -104,14 +104,28 @@
 
 // console.log(doubledNumbers);
 
-// 11. Calculate the average of all numbers in an array
+// // 11. Calculate the average of all numbers in an array
 
-const numbers = [10, 20, 30, 40]; 
-let total = 0;
+// const numbers = [10, 20, 30, 40]; 
+// let total = 0;
 
-numbers.forEach(num => {
-    total += num;
+// numbers.forEach(num => {
+//     total += num;
+// });
+
+// const average = total / numbers.length;
+// console.log("Average:", average);
+
+
+
+// 12. Find the longest word in an array
+const words = ["cat", "elephant", "dog", "giraffe"];
+let longestWord = "";
+
+words.forEach(word => {
+    if (word.length > longestWord.length) {
+        longestWord = word;
+    }
 });
 
-const average = total / numbers.length;
-console.log("Average:", average);
+console.log("Longest word:", longestWord);
