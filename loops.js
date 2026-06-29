@@ -44,15 +44,28 @@
 
 // console.log("Total items:", count);
 
-// 6. Find the largest number in an array
+// // 6. Find the largest number in an array
 
-const numbers = [12, 45, 7, 89, 23];
-let max = numbers[0];
+// const numbers = [12, 45, 7, 89, 23];
+// let max = numbers[0];
+
+// numbers.forEach(num => {
+//     if (num > max) {
+//         max = num;
+//     }
+// });
+
+// console.log("Largest number:", max);
+
+// 7. Count how many numbers are even
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+let evenCount = 0;
 
 numbers.forEach(num => {
-    if (num > max) {
-        max = num;
+    if (num % 2 === 0) {
+        evenCount++;
     }
 });
 
-console.log("Largest number:", max);
+console.log("Even numbers count:", evenCount);
