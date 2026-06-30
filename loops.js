@@ -174,4 +174,5 @@ words.forEach(word => {
     }
 });
 
-console.log(wordCounts); // Didn't understand , but this code counts how many times each word appears in the array and logs the result. but I'm confused about how it works
+console.log(wordCounts); // Didn't understand , but this code counts how many times each word appears in the array and logs the result. but I'm confused about how it works.
+
